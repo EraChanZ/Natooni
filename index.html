@@ -152,8 +152,12 @@
     //imgSignature.style.right = '20px'; // Align to the right or any desired position
     imgSignature.style.width = "100px"; // Keep original size or set as needed
     imgSignature.style.height = '100px'; // Keep original size or set as needed
-    imgSignature.style.top = "500px"; // Position from the bottom
-    imgSignature.style.left = "300px"; 
+
+    const topPosition = window.innerHeight * 0.55; // 80% of the viewport height
+    const leftPosition = window.innerWidth * 0.67; // 80% of the viewport width
+    imgSignature.style.top = `${topPosition}px`; // Position from the top
+    imgSignature.style.left = `${leftPosition}px`; // Position from the left
+
     //imgSignature.style.zIndex = "100";
     container.appendChild(imgSignature); // Add the signature image to the container
 
